@@ -1,0 +1,87 @@
+.container {
+    margin-bottom: 30px;
+}
+
+.title {
+    color: rgb(201, 160, 48);
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    height: 20vh;
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .imageWrapper {
+        width: 30vw;
+        height: 30vh;
+        margin-right: 20px;
+    }
+}
+.dropbtn {
+    background: url("../../../public/bookmark-icon-.png") no-repeat;
+    background-size: 180%;
+    background-color: transparent;
+    background-position-x: 60%;
+    background-position-y: 50%;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+   
+  }
+  
+  .dropdown {
+    position: absolute;
+    
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+   line-height: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color:black
+  }
+  
+  .dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownContent a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #454b47;
+  }

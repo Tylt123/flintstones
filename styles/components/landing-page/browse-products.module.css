@@ -1,0 +1,21 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background: url('/images/ProductBackground_final.webp') fixed ;
+    filter: grayscale(80%);
+    cursor: pointer;
+    background-size:50%;
+}
+
+.section:hover {
+    transition: all 0.5s;
+    filter: grayscale(0%);
+}
+
+.header {
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
